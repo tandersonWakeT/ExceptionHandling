@@ -22,7 +22,7 @@ class MyExceptionDemo{
 			s1.setMarks(kb.nextInt());
 				
 			if(s1.getMarks() < 0 || s1.getMarks() > 100)
-				throw new MyException();
+				throw new InvalidMarksException();
 			
 		}
 		
@@ -30,7 +30,7 @@ class MyExceptionDemo{
 			flag=1;
 			System.out.println("Exception : "+ e);
 		}
-		catch (MyException e) {
+		catch (InvalidMarksException e) {
 			flag=1;
 			System.out.println("Exception : "+ e);
 		}

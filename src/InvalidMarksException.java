@@ -1,5 +1,6 @@
-public class  MyException extends Exception  {
-	public MyException() {
+public class  InvalidMarksException extends Exception  {
+	
+	public InvalidMarksException() {
 		System.out.println("User defined Exception thrown");
 	}
 	public String toString() {
